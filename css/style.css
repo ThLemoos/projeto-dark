@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+/* LOGIN */
+.login-body {
+    background: url('../img/bg-dark.png') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    color: #00ffcc;
+}
+
+
+.login-container input,
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.login-container button {
+    background: #00ffcc;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* CHAT */
+.chat-body {
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chat-container {
+    width: 95%;
+    max-width: 500px;
+    background: #111;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+header {
+    padding: 15px;
+    background: #00ffcc;
+    color: #000;
+    text-align: center;
+}
+
+
+#messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.message {
+    background: #00ffcc;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.input-area button {
+    padding: 10px 15px;
+    background: #00ffcc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 14px;
+    }
+}
+
+#password {
+    font-family: 'Courier New', monospace;
+    color: #00ffcc;
+}
+
+.logout {
+    float: right;
+    background: #000;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

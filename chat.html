@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Secreto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="chat-body">
+
+    <script>
+        if (localStorage.getItem('auth') !== 'true') {
+            window.location.replace('index.html');
+        }
+    </script>
+
+
+    <div class="chat-container">
+        <header>
+            Chat Secreto 💚
+            <button class="logout" onclick="logout()">Sair</button>
+        </header>
+
+
+        <div id="messages"></div>
+
+
+        <div class="input-area">
+            <form class="input-area" onsubmit="sendMessage(); return false;">
+                <input type="text" id="messageInput" placeholder="Digite sua mensagem..." autocomplete="off" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/chat.js"></script>
+</body>
+
+</html>

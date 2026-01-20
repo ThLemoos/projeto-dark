@@ -135,3 +135,9 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
+input,
+button,
+textarea {
+    font-size: 16px;
+}
